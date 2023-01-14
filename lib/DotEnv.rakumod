@@ -1,5 +1,18 @@
 use v6;
 
-unit module DotEnv;
+unit module Dotenv;
  
-class Load is export {}
+class Dotenv is export {
+
+    method load() {
+
+    }
+
+    method parse() {
+
+    }
+
+    method require_keys() {
+        
+    }
+}
