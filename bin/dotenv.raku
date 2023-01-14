@@ -1,4 +1,4 @@
-#!/usr/bin/env ruku
+#!/usr/bin/env raku
 
 use v6;
 

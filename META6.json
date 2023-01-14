@@ -1,1 +1,23 @@
-{}
+{
+    "perl" : "6.c",
+    "name" : "Env::Dotenv",
+    "api"  : "1",
+    "auth" : "github:ispyhumanfly",
+    "version" : "0.0.1",
+    "meta-versoin": 1,
+    "description" : "Wonderful simulation to get some perspective.",
+    "authors" : [ "Dan Stephenson" ],
+    "license" : "Artistic-2.0",
+    "provides" : {
+        "Env::Dotenv" : "lib/Dotenv.rakumod",
+        "dotenv": "bin/dotenv.raku"
+    },
+    "depends" : ["Env" ],
+    "build-depends" : ["CSV::Parser" ],
+    "test-depends" : [ "Test", "Test::Meta" ],
+    "resources" : [ ],
+    "tags": [
+      "Utils", "Env", "Perspective"
+    ],
+    "source-url" : "git://github.com/ispyhumanfly/raku-dotenv.git"
+}
