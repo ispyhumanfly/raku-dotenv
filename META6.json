@@ -1,6 +1,6 @@
 {
     "perl" : "6.c",
-    "name" : "Env::Dotenv",
+    "name" : "Dotenv",
     "api"  : "1",
     "auth" : "github:ispyhumanfly",
     "version" : "0.0.1",
@@ -9,7 +9,7 @@
     "authors" : [ "Dan Stephenson" ],
     "license" : "Artistic-2.0",
     "provides" : {
-        "Env::Dotenv" : "lib/Dotenv.rakumod",
+        "Dotenv" : "lib/Dotenv.rakumod",
         "dotenv": "bin/dotenv.raku"
     },
     "depends" : ["Env" ],
