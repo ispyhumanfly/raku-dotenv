@@ -1,7 +1,7 @@
 {
     "perl" : "6.c",
     "name" : "Env::Dotenv",
-    "api"  : "1",
+    "api"  : "0",
     "auth" : "zef:ispyhumanfly",
     "version" : "0.0.1",
     "meta-versoin": 1,
@@ -9,13 +9,12 @@
     "authors" : [ "Dan Stephenson" ],
     "license" : "Artistic-2.0",
     "provides" : {
-        "Env::Dotenv" : "lib/Env/Dotenv.rakumod",
-        "dotenv": "bin/dotenv.raku"
+        "Env::Dotenv" : "lib/Env/Dotenv.rakumod"
     },
     "depends" : [],
     "build-depends" : [],
     "test-depends" : [ "Test", "Test::Meta" ],
-    "resources" : ["bin/dotenv.raku" ],
+    "resources" : [],
     "tags": [
       "Utils", "Env", "Perspective"
     ],
