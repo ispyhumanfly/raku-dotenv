@@ -2,12 +2,11 @@
 
 use v6;
 
-
 use lib "lib";
+
 use Env::Dotenv;
 
-say friendly-greeting;
+dotenv_load();
 
 my $dotenv = Dotenv.new();
-
 $dotenv.load();
