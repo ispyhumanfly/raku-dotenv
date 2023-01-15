@@ -1,7 +1,10 @@
-
 use v6;
 
-use Dotenv;
+use lib "lib";
 
-Dotenv.load()
+use Env::Dotenv;
 
+dotenv_load();
+
+my $dotenv = Dotenv.new();
+$dotenv.load();

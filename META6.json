@@ -13,7 +13,7 @@
         "dotenv": "bin/dotenv.raku"
     },
     "depends" : [],
-    "build-depends" : ["CSV::Parser" ],
+    "build-depends" : [],
     "test-depends" : [ "Test", "Test::Meta" ],
     "resources" : [ ],
     "tags": [
