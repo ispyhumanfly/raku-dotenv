@@ -16,7 +16,3 @@ my $dotenv = Dotenv.new();
 $dotenv.load();
 
 ```
-
-## Notes
-
-https://github.com/bkeepers/dotenv
