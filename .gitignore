@@ -1,6 +1,6 @@
 
-# Gitignore for Raku (http://www.raku.org)
-# As part of https://github.com/github/gitignore
+
+.DS_Store
 
 # precompiled files
 .precomp

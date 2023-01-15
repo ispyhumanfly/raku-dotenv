@@ -2,4 +2,12 @@
 
 use v6;
 
-say "Hello"
+
+use lib "lib";
+use Env::Dotenv;
+
+say friendly-greeting;
+
+my $dotenv = Dotenv.new();
+
+$dotenv.load();

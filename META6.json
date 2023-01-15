@@ -1,6 +1,6 @@
 {
     "perl" : "6.c",
-    "name" : "Dotenv",
+    "name" : "Env::Dotenv",
     "api"  : "1",
     "auth" : "github:ispyhumanfly",
     "version" : "0.0.1",
@@ -12,7 +12,7 @@
         "Dotenv" : "lib/Dotenv.rakumod",
         "dotenv": "bin/dotenv.raku"
     },
-    "depends" : ["Env" ],
+    "depends" : [],
     "build-depends" : ["CSV::Parser" ],
     "test-depends" : [ "Test", "Test::Meta" ],
     "resources" : [ ],
