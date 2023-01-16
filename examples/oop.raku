@@ -13,3 +13,5 @@ $dotenv.load();
 
 say %*ENV<MY_SECRET_INFO>;
 
+say %*ENV<SOME_THINGS_ARE_PRECIOUS>;
+
