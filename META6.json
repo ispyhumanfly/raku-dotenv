@@ -1,6 +1,6 @@
 {
     "perl" : "6.c",
-    "name" : "dotenv",
+    "name" : "Env::Dotenv",
     "api"  : "0",
     "auth" : "zef:ispyhumanfly",
     "version" : "0.0.1",
