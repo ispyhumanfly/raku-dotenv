@@ -4,7 +4,7 @@
     "api"  : "0",
     "auth" : "zef:ispyhumanfly",
     "version" : "0.0.1",
-    "meta-versoin": 1,
+    "meta-version": "0",
     "description" : "Wonderful simulation to get some perspective.",
     "authors" : [ "Dan Stephenson" ],
     "license" : "Artistic-2.0",
