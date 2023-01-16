@@ -25,3 +25,9 @@ if %*ENV<MY_SECRET_INFO> {
 }
 
 ```
+
+## Installation
+
+```shell
+zef install -v https://github.com/ispyhumanfly/raku-dotenv.git
+```
