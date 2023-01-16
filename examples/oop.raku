@@ -1,4 +1,4 @@
-#!/usr/bin/env raku
+#!raku
 
 use v6;
 
@@ -10,3 +10,6 @@ dotenv_load();
 
 my $dotenv = Dotenv.new();
 $dotenv.load();
+
+say %*ENV<MY_SECRET_INFO>;
+
