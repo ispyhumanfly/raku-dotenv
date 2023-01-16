@@ -13,10 +13,10 @@
     },
     "depends" : [],
     "build-depends" : [],
-    "test-depends" : [ "Test", "Test::Meta" ],
+    "test-depends" : [ "Test", "Test::META"],
     "resources" : [],
     "tags": [
-      "Utils", "Env", "Perspective"
+      "Utils", "Env", "Development", "12Factor"
     ],
     "source-url" : "git://github.com/ispyhumanfly/raku-dotenv.git"
 }

@@ -1,0 +1,20 @@
+use v6;
+
+use lib 'lib';
+
+use Test;
+use Test::META;
+
+constant AUTHOR = ?%*ENV<AUTHOR_TESTING>;
+
+plan 1;
+
+if AUTHOR {
+    require Test::META <&meta-ok>;
+    meta-ok;
+    done-testing;
+}
+else {
+     skip-rest "Skipping author test";
+     exit;
+}
