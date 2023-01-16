@@ -17,4 +17,9 @@ dotenv_load();
 my $dotenv = Dotenv.new();
 $dotenv.load();
 
+# Attempt to access a variable that had been set in your local .env file
+if %*ENV<MY_SECRET_INFO> {
+    say %*ENV<MY_SECRET_INFO>;
+}
+
 ```
