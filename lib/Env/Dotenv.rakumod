@@ -2,6 +2,7 @@ use v6;
 
 unit module Env::Dotenv;
 
+# asdasd
 sub dotenv_load is export  { 
 
     if '.env'.IO.e {
