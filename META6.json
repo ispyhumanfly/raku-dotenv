@@ -12,7 +12,7 @@
         "Env::Dotenv" : "lib/Env/Dotenv.rakumod"
     },
     "depends" : [],
-    "build-depends" : [],
+    "build-depends" : ["File::Find"],
     "test-depends" : [ "Test", "Test::META"],
     "resources" : [],
     "tags": [
