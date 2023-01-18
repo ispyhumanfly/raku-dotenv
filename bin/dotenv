@@ -3,10 +3,9 @@
 use v6;
 use lib "lib";
 
-use Env::Dotenv :class;
+use Env::Dotenv :ALL;
 
-my $dotenv = Dotenv.new();
-$dotenv.load();
+dotenv;
 
 if %*ENV<MY_SECRET_INFO> {
     say %*ENV<MY_SECRET_INFO>;
