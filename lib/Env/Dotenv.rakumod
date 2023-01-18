@@ -2,8 +2,7 @@ use v6;
 
 unit module Env::Dotenv;
 
-# asdasd
-sub dotenv_load is export  { 
+sub dotenv_load is export(:dotenv_load)  { 
 
     if '.env'.IO.e {
         for '.env'.IO.lines -> $line {
@@ -14,7 +13,7 @@ sub dotenv_load is export  {
     }
 }
 
-class Dotenv is export {
+class Dotenv is export(:Dotenv) {
 
     method load {
         dotenv_load();
