@@ -1,9 +1,8 @@
 tasks:
-    name: unit_tests
+    name: test
     language: Bash
     default: true
     code: |
       set -e
-      cd source/
-      sudo pip3 install -r requirements.txt
-      pytest
+      zef install --deps-only --/test .
+      zef test .
