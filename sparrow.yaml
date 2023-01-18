@@ -4,5 +4,5 @@ tasks:
     default: true
     code: |
       set -e
-      zef install --deps-only --/test .
+      zef install .
       zef test .

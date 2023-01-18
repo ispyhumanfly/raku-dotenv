@@ -7,6 +7,6 @@ use Env::Dotenv :ALL;
 
 dotenv;
 
-if %*ENV<MY_SECRET_INFO> {
-    say %*ENV<MY_SECRET_INFO>;
+for %*ENV.kv -> $key, $value {
+    "$key: $value".say;
 }
