@@ -5,9 +5,8 @@ tasks:
         code: |
             set -e
             set -x
-            s6 --index-update
-            cd source 
-            tomty --profile=ci --all --show-failed --color 
+            zef build .
+            zef install .
         depends:
             -
                 name: install-zef-deps
