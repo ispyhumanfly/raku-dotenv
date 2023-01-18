@@ -3,7 +3,7 @@
 use v6;
 use lib "lib";
 
-use Env::Dotenv :Dotenv;
+use Env::Dotenv :class;
 
 my $dotenv = Dotenv.new();
 $dotenv.load();

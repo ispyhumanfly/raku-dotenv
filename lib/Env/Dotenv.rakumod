@@ -2,7 +2,7 @@ use v6;
 
 unit module Env::Dotenv;
 
-sub dotenv_load is export(:dotenv_load)  { 
+sub dotenv is export(:functional)  { 
 
     if '.env'.IO.e {
         for '.env'.IO.lines -> $line {
@@ -13,9 +13,9 @@ sub dotenv_load is export(:dotenv_load)  {
     }
 }
 
-class Dotenv is export(:Dotenv) {
+class Dotenv is export(:class) {
 
     method load {
-        dotenv_load();
+        dotenv();
     }
 }
