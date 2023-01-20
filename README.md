@@ -37,6 +37,10 @@ for dotenv_values().kv -> $key, $value {
 
 
 ```
+A command line interface is also in the works. Right now it only outputs the variables it finds inside of your .env. More features to come.
+```shell
+$ dotenv
+```
 
 ## Installation
 
