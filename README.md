@@ -9,6 +9,14 @@ And from this one https://pypi.org/project/python-dotenv/
 
 ## Synopsis
 
+In your application or scripts root directory, create a `.env` file and place some variables in it.
+```shell
+MY_SECRET_INFO="some value"
+MY_API_KEY=123123oiashdam,hwejk1h23kbaamn
+```
+
+Then inside of your script...
+
 ```raku
 use v6;
 use Env::Dotenv :ALL;
