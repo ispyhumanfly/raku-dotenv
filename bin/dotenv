@@ -5,7 +5,11 @@ use lib "lib";
 
 use Env::Dotenv :ALL;
 
-dotenv;
+dotenv_load();
+
+my $config = dotenv_values();
+
+say $config;
 
 for %*ENV.kv -> $key, $value {
     "$key: $value".say;

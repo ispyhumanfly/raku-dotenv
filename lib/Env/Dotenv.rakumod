@@ -2,7 +2,7 @@ use v6;
 
 unit module Env::Dotenv;
 
-sub dotenv is export(:functional)  { 
+sub dotenv_load is export(:load)  { 
 
     if '.env'.IO.e {
         for '.env'.IO.lines -> $line {
@@ -13,9 +13,28 @@ sub dotenv is export(:functional)  {
     }
 }
 
-class Dotenv is export(:class) {
+sub dotenv_values is export(:values)  {
+    
+    my %env;
+
+    if '.env'.IO.e {
+        for '.env'.IO.lines -> $line {
+
+            my ($key, $value) =  $line.split('=');
+            %env{chomp($key)} = chomp($value);
+        }
+    }
+    
+    return %env;
+}
+
+class Dotenv is export(:oop) {
 
     method load {
-        dotenv();
+        dotenv_load();
+    }
+    
+    method values {
+        dotenv_values();
     }
 }

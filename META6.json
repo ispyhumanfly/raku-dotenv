@@ -5,7 +5,7 @@
     "auth" : "zef:ispyhumanfly",
     "version" : "0.0.4",
     "meta-version": "0",
-    "description" : "A Raku shim to load environment variables from .env into ENV in development.",
+    "description" : "A shim to load environment variables from .env into ENV in development.",
     "authors" : [ "ispyhumanfly" ],
     "license" : "Artistic-2.0",
     "provides" : {

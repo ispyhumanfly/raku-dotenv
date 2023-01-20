@@ -4,7 +4,8 @@
 ![Zef Badge](https://raku.land/zef:ispyhumanfly/Env::Dotenv/badges/version)
 [![SparrowCI](https://ci.sparrowhub.io/project/gh-ispyhumanfly-raku-dotenv/badge)](https://ci.sparrowhub.io)
 
-A Raku shim to load environment variables from .env into ENV in development. Based on the original [bkeepers](https://github.com/bkeepers/dotenv) module written in Ruby.
+A shim to load environment variables from .env into ENV in development. Based on the original [bkeepers](https://github.com/bkeepers/dotenv) module written in Ruby.
+And from this one https://pypi.org/project/python-dotenv/
 
 ## Synopsis
 
@@ -12,12 +13,19 @@ A Raku shim to load environment variables from .env into ENV in development. Bas
 use v6;
 use Env::Dotenv :ALL;
 
-dotenv;
+dotenv_load;
 
-# Attempt to access a variable that had been set in your local .env file
+Attempt to access a variable that had been set in your local .env file
 if %*ENV<MY_SECRET_INFO> {
     say %*ENV<MY_SECRET_INFO>;
 }
+
+## Or...
+
+my $config = dotenv_values(".env")
+
+say $config;
+
 
 ```
 
