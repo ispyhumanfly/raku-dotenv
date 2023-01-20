@@ -1,4 +1,5 @@
 tasks:
+    -
         name: zef-build
         default: true
         language: Bash
