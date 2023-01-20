@@ -15,7 +15,7 @@ use Env::Dotenv :ALL;
 
 dotenv_load();
 
-Attempt to access a variable that had been set in your local .env file
+# Attempt to access a variable that had been set in your local .env file
 if %*ENV<MY_SECRET_INFO> {
     say %*ENV<MY_SECRET_INFO>;
 }
