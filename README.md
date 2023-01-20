@@ -49,7 +49,7 @@ $ dotenv
 ```shell
 zef install Env::Dotenv
 ```
-### Development
+### Unstable
 ```shell
 zef install -v https://github.com/ispyhumanfly/raku-dotenv.git
 ```

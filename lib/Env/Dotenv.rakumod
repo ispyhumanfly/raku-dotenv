@@ -8,7 +8,7 @@ sub dotenv_load is export(:load)  {
         for '.env'.IO.lines -> $line {
 
             my ($key, $value) =  $line.split('=');
-            %*ENV{$key} = $value;
+            %*ENV{chomp($key)} = chomp($value);
         }
     }
 }
