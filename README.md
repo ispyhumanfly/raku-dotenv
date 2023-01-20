@@ -40,6 +40,12 @@ for dotenv_values().kv -> $key, $value {
 
 ## Installation
 
+### Stable
+
+```shell
+zef install Env::Dotenv
+```
+### Development
 ```shell
 zef install -v https://github.com/ispyhumanfly/raku-dotenv.git
 ```

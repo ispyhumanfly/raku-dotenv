@@ -31,10 +31,10 @@ sub dotenv_values is export(:values)  {
 class Dotenv is export(:oop) {
 
     method load {
-        dotenv_load();
+        return dotenv_load();
     }
     
     method values {
-        dotenv_values();
+        return dotenv_values();
     }
 }
