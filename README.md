@@ -15,16 +15,17 @@ use Env::Dotenv :ALL;
 
 dotenv_load();
 
-# Attempt to access a variable that had been set in your local .env file
-if %*ENV<MY_SECRET_INFO> {
-    say %*ENV<MY_SECRET_INFO>;
+for %*ENV.kv -> $key, $value {
+    "$key: $value".say;
 }
 
-## Or...
+my %dotenv = dotenv_values();
 
-my $config = dotenv_values(".env")
+say %dotenv{"MY_SECRET_INFO"};
 
-say $config;
+for dotenv_values().kv -> $key, $value {
+    "$key: $value".say;
+}
 
 
 ```

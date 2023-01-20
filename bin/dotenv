@@ -7,10 +7,14 @@ use Env::Dotenv :ALL;
 
 dotenv_load();
 
-my $config = dotenv_values();
-
-say $config;
-
 for %*ENV.kv -> $key, $value {
+    "$key: $value".say;
+}
+
+my %dotenv = dotenv_values();
+
+say %dotenv{"MY_SECRET_INFO"};
+
+for dotenv_values().kv -> $key, $value {
     "$key: $value".say;
 }
