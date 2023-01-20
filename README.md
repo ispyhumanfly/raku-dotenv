@@ -13,7 +13,7 @@ And from this one https://pypi.org/project/python-dotenv/
 use v6;
 use Env::Dotenv :ALL;
 
-dotenv_load;
+dotenv_load();
 
 Attempt to access a variable that had been set in your local .env file
 if %*ENV<MY_SECRET_INFO> {
