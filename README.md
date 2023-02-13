@@ -10,6 +10,7 @@ And from this one https://pypi.org/project/python-dotenv/
 ## Synopsis
 
 In your application or scripts root directory, create a `.env` file and place some variables in it.
+
 ```shell
 MY_SECRET_INFO="some value"
 MY_API_KEY=123123oiashdam,hwejk1h23kbaamn
@@ -35,9 +36,10 @@ for dotenv_values().kv -> $key, $value {
     "$key: $value".say;
 }
 
-
 ```
-A command line interface is also in the works. Right now it only outputs the variables it finds inside of your .env. More features to come.
+
+A command line interface is also in the works. Right now it only outputs the variables it finds inside of your `.env`.
+
 ```shell
 $ dotenv
 ```
